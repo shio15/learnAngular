@@ -1,14 +1,41 @@
 <div class="container">
-  <div>
-    {{ items[0].wishText }}
+
+
+  <div *ngIf='items.length === 0; then noItems else showItems'>
+    5 ngif false "items.length is 0"
+  </div>
+
+  <div *ngIf='items.length === 0; then noItems '>
+    6 ngif then
+  </div>
+
+  <div *ngIf='items.length === 0;  '>
+    61 ngif then
+  </div>
+
+  <div *ngIf='items.length === 0; else showItems'>
+    7 ngif else "items.length is 0"
   </div>
 
   <hr>
 
-  <div *ngFor="let item of items">
-    {{item.wishText}}
-    {{item.isComplete}}
-  </div>
+  <ul class="wish-list" *ngIf="items.length > 0">
+    3  *ngIf="items.length > 0">
+    <li *ngFor="let item1 of items">
+      <div class="form-check">
+        <label class="form-check-label">
+          <input class="checkbox" type="checkbox"> {{item1.wishText}}
+        </label>
+      </div>
+    </li>
+  </ul>
 
+  <ng-template #noItems>
+    1 ng-template #noItems
+  </ng-template>
+
+  <ng-template #showItems>
+    2 ng-template #showItems
+  </ng-template>
 
 </div>

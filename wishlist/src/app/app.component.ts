@@ -12,10 +12,10 @@ import { CommonModule } from '@angular/common';
 })
 export class AppComponent {
   title = 'wishlist';
-  items = [
-    new WishItem('To lean angualar'),
-    new WishItem('get coffeee', true),
-    new WishItem('find grass',),
+  items : WishItem[] = [
+    // new WishItem('To lean angualar'),
+    // new WishItem('get coffeee', true),
+    // new WishItem('find grass',),
+
   ]
 }
- 

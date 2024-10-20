@@ -1,3 +1,11 @@
+ngIf
+ngIf; then ng-template
+ngIf; then else
+import CommonModule to get &ng- on div
+cannot 2 *ng on one element
+
+
+
 # Wishlist
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
